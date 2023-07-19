@@ -4,7 +4,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner boolen = new Scanner(System.in);
+
+        System.out.print("Введите перовое число: ");
+        int numebr = boolen.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int number1 = boolen.nextInt();
+
+        boolean otv = numebr > number1;
+
+        if(otv) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+
+
+/*        Scanner input = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
         float num1 = input.nextFloat();
@@ -19,7 +36,7 @@ public class Main {
         float res5 = num1 % num2;
 
         System.out.println("Результат: ");
-        System.out.println(res1 + "\n" + res2 + "\n" + res3 + "\n" + res4 + "\n" + res5);
+        System.out.println(res1 + "\n" + res2 + "\n" + res3 + "\n" + res4 + "\n" + res5);*/
     }
 
 }
