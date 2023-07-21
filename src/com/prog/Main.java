@@ -4,39 +4,34 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner boolen = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.print("Введите перовое число: ");
-        int numebr = boolen.nextInt();
+        System.out.print("Введите переменную: +, -, *, /: ");
+        String znak = input.nextLine();
 
-        System.out.print("Введите второе число: ");
-        int number1 = boolen.nextInt();
+        System.out.print("\nВведите перовое число: ");
+        int a = input.nextInt();
 
-        boolean otv = numebr > number1;
+        System.out.print("\nВведите второе число: ");
+        int b = input.nextInt();
 
-        if(otv) {
-            System.out.println("True");
+        if (znak.equals("+")) {
+            int result1 = a + b;
+            System.out.println("Ответ: " + result1);
+
+        } else if (znak.equals("-")) {
+            int result2 = a - b;
+            System.out.println("Ответ: " + result2);
+
+        } else if (znak.equals("*")) {
+            int result3 = a * b;
+            System.out.println("Ответ: " + result3);
+
+        } else if (znak.equals("/")) {
+            int result4 = a / b;
+            System.out.println("Ответ: " + result4);
         } else {
-            System.out.println("False");
+            System.out.println("Ошибка!");
         }
-
-
-/*        Scanner input = new Scanner(System.in);
-
-        System.out.print("Введите первое число: ");
-        float num1 = input.nextFloat();
-
-        System.out.print("Введите второе число: ");
-        float num2 = input.nextFloat();
-
-        float res1 = num1 + num2;
-        float res2 = num1 - num2;
-        float res3 = num1 * num2;
-        float res4 = num1 / num2;
-        float res5 = num1 % num2;
-
-        System.out.println("Результат: ");
-        System.out.println(res1 + "\n" + res2 + "\n" + res3 + "\n" + res4 + "\n" + res5);*/
     }
-
 }
