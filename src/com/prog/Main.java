@@ -2,7 +2,7 @@ package com.prog;
 import java.util.Scanner;
 
 public class Main {
-
+// Циклы
     public static void main(String[] args) {
 
         for(int i = 1; i < 20; i += 2) {
