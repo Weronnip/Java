@@ -4,43 +4,76 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Действие: ");
-        String action = input.nextLine();
+        for(int i = 1; i < 20; i += 2) {
+            System.out.println("Element: " + i);
 
-        System.out.print("Введите первое число: ");
-        int num1 = input.nextInt();
+            if(i % 5 == 0) {
+                continue;
+            }
 
-        System.out.print("Введите второе число: ");
-        int num2 = input.nextInt();
-
-        int result;
-
-        switch (action) {
-            case "+":
-                result = num1 + num2;
-                System.out.println("Ответ: " + result);
+            if (i >= 12) {
+                System.out.println("Element ready!");
                 break;
-            case "-":
-                result = num1 - num2;
-                System.out.println("Ответ: " + result);
-                break;
-            case "*":
-                result = num1 * num2;
-                System.out.println("Ответ: " + result);
-                break;
-            case "/":
-                if (num2 == 0)
-                    System.out.println("На 0 делить нельзя!");
-                else {
-                    result = num1 / num2;
-                    System.out.println("Ответ: " + result);
-                }
-                break;
-            default:
-                System.out.println("Ошибка в действии");
+            }
         }
+
+
+//        int i = 2;
+//
+//        do {
+//            System.out.println("Element: " + i);
+//            i ++;
+//        } while (i < 125);
+
+//        int i = 100;
+//        while(i > 2) {
+//            System.out.println("Element: " + i);
+//
+//            i -= 15;
+//        }
+//        for(float i = 100; i > 0; i /= 2) {
+//            System.out.println("Element: " + i);
+//        }
+
+
+//        Scanner input = new Scanner(System.in);
+//
+//        System.out.print("Действие: ");
+//        String action = input.nextLine();
+//
+//        System.out.print("Введите первое число: ");
+//        int num1 = input.nextInt();
+//
+//        System.out.print("Введите второе число: ");
+//        int num2 = input.nextInt();
+//
+//        int result;
+//
+//        switch (action) {
+//            case "+":
+//                result = num1 + num2;
+//                System.out.println("Ответ: " + result);
+//                break;
+//            case "-":
+//                result = num1 - num2;
+//                System.out.println("Ответ: " + result);
+//                break;
+//            case "*":
+//                result = num1 * num2;
+//                System.out.println("Ответ: " + result);
+//                break;
+//            case "/":
+//                if (num2 == 0)
+//                    System.out.println("На 0 делить нельзя!");
+//                else {
+//                    result = num1 / num2;
+//                    System.out.println("Ответ: " + result);
+//                }
+//                break;
+//            default:
+//                System.out.println("Ошибка в действии");
+//        }
 
 //        System.out.print("Проверка чисел: ");
 //        int num = input.nextInt();
