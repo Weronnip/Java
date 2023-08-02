@@ -1,6 +1,6 @@
 package com.prog;
 
-public class function {
+public class Function {
     public static void main(String[] args) {
         byte[] array = new byte[] {1, 2, 3};
 
