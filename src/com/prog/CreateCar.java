@@ -48,4 +48,10 @@ public class CreateCar extends Object {
 
         return new CreateCar(NameCar, SpeedCar, WeightCar, ColorCar, FuelCar, CoordinateCar);
     }
+
+    @Override
+    public void moveObject(float speed) {
+
+    }
+
 }
